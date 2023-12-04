@@ -28,7 +28,7 @@ def data_cleaning(df):
     df_clean = cleaner(df)
     return df_clean
 
-def preprocessing_pipe(df):
+def preprocessing_pipe():
     num_transformer = MinMaxScaler()
 
     cat_transformer = OneHotEncoder(handle_unknown='ignore', sparse_output = False)
